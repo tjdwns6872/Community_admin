@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Input = ({ children }) => {
+const Input = ({ inputId, inputClass, inputName, inputType, children }) => {
     return (
-        <input name={children}/>
+        <input type={inputType} name={inputName}/>
     );
   };
   
