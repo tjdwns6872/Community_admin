@@ -8,7 +8,7 @@ const Login = () => {
       <p>가장 먼저 보여지는 로그인페이지입니다.</p>
       <Input inputName="userId" inputType="text"/>
       <Input inputName="userPw" inputType="password"/>
-      <Button buttonId="btn login-btn">로그인</Button>
+      <Button buttonId="btn login-btn" url="rest/adm/user/login">로그인</Button>
     </div>
   );
 };
