@@ -1,16 +1,12 @@
 import React from 'react';
-import axios from 'axios';
+import domainFunc from '../../service/ApiServer'
 
 const Button = ({ buttonId, buttonClass, children, url }) => {
     return (
-        <button id={buttonId} onClick={()=>{
-            axios.get('http://localhost:8080/rest/adm/user/login').then((result)=>{
-                console.log(result)
-            })
-        }}>
+        <button id={buttonId} onClick={() => domainFunc.domainType('loacl', 'get', '/rest/adm/user/login', {userId:"tjdwns6872", userPw:"wjqfc227"})}>
             {children}
         </button>
     );
-  };
-  
-  export default Button;
+};
+
+export default Button;
