@@ -1,12 +1,12 @@
 import {Link} from "react-router-dom";
 
-const RouteLink = () =>{
+const Menu = () =>{
     return (
         <>
-            <Link to={"/login"}>LOING</Link>
             <Link to={"/home"}>HOME</Link>
+            <Link to={"/login"}>LOING</Link>
         </>
     )
 }
 
-export default RouteLink;
+export default Menu;

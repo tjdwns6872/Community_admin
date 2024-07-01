@@ -4,7 +4,6 @@ import {Routes, Route} from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Layout from './layouts/Layout';
-import RouteLink from './lib/RouteLink'
 
 function App() {
   return (
