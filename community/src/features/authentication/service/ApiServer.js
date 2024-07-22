@@ -3,16 +3,20 @@ import axiosFunc from '../../../lib/ApiCommons'
 const API_URL = "http://localhost:8080"
 
 const domainFunc = {
-    domainType(domain, type, url, data){
+    domainType(domain, type, url, params, link=''){
         if(domain === "loacl"){
             url = API_URL+url
         }
-        axios(type, url, data);
+        if(link !== ''){
+            axios(type, url, params, link);
+        }else{
+            axios(type, url, params);
+        }
     }
 }
 
-function axios(type, url, data){
-    axiosFunc.asynchronous(type, url, data)
+function axios(type, url, params, link=''){
+    axiosFunc.asynchronous(type, url, params, link)
 }
 
 
