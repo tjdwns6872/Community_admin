@@ -1,9 +1,9 @@
 import React from 'react';
 import domainFunc from '../../service/ApiServer'
 
-const Button = ({ buttonId, buttonClass, children, domain, type, url, params, link }) => {
+const Button = ({ buttonId, buttonClass, children, domain, type, url, params, link, fname }) => {
     return (
-        <button id={buttonId} onClick={() => domainFunc.domainType(domain, type, url, params, link)}>
+        <button id={buttonId} onClick={() => domainFunc.domainType(domain, type, url, params, link, fname)}>
             {children}
         </button>
     );
