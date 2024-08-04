@@ -1,9 +1,9 @@
-import loginSetting from "../service/login/Login";
+import domainFunc from './ApiServer';
 
 const FunctionService = {
-    Setting(data, fname){
-        if(fname==='login'){
-            loginSetting.sessionSetting(data);
+    functionType(domain='', type, url, params, link, fname){
+        if(domain !== ''){
+            domainFunc.domainType(domain, type, url, params, link, fname);
         }
     }
 }

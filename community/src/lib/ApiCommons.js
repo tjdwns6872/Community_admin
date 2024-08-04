@@ -15,7 +15,6 @@ function get(url, params='', link, fname){
         { params: data }
     ).then((resp)=>{
         if(link !== ''){
-            FunctionService.Setting(resp.data, fname);
             window.location.href = link;
         }
     }).catch((error)=>{
