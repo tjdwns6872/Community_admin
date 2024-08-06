@@ -7,8 +7,8 @@ const SessionFunc = {
         // Session.set('userRank', params.result.data.userRank);
         var userData = {"userNo": params.result.data.userNo, "userRank":params.result.data.userRank};
         sessionStorage.setItem('userData', JSON.stringify(userData));
-        var userNo = document.getElementById('userNo');
-        userNo.append(SessionFunc.sessionLoad('userData'));
+        // var userNo = document.getElementById('userNo');
+        // userNo.append(SessionFunc.sessionLoad('userData'));
     },
     //저장된 세션 불러오기
     sessionLoad(key){
