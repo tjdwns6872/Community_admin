@@ -1,6 +1,5 @@
 import axios from 'axios';
-import SessionSetting from '../features/authentication/service/session/Session';
-import FunctionService from '../features/authentication/service/FunctionService';
+import SessionFunc from '../features/authentication/service/session/Session';
 
 const axiosFunc = {
     asynchronous(type, url, params, link, fname){
@@ -17,9 +16,9 @@ function get(url, params='', link, fname){
     ).then((resp)=>{
         if(link !== ''){
             if(fname === 'login'){
-                SessionSetting.sessionSave(resp.data);
+                SessionFunc.sessionSave(resp.data);
             }
-            //window.location.href = link;
+            window.location.href = link;
         }
     }).catch((error)=>{
         console.log(error)
