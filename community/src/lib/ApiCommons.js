@@ -10,9 +10,8 @@ const axiosFunc = {
 }
 
 function get(url, params='', link, fname){
-    var data = JSON.parse(params);
     axios.get(url,
-        { params: data }
+        { params: params }
     ).then((resp)=>{
         if(link !== ''){
             if(fname === 'login'){

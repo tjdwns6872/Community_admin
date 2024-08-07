@@ -5,11 +5,10 @@ const Menu = () =>{
     return (
         <>
             <Link to={"/home"}>HOME</Link>
-            <Link to={"/login"}>LOING</Link>
             {
                 sessionStorage.getItem('userData') !== null
-                ? <Button buttonId="btn login-btn" params='userData' link='/' fname='logout'>LOGOUT</Button>
-                : null
+                ? <Button buttonId="btn login-btn" link='/' fname='logout'>LOGOUT</Button>
+                : <Link to={"/login"}>LOING</Link>
             }
             <Button fname='test'>test</Button>
         </>
