@@ -1,9 +1,8 @@
 import React from 'react';
-import FunctionService from '../../service/FunctionService';
 
 const Button = ({ buttonId, buttonClass, children, domain, type, url, params, link, fname }) => {
     return (
-        <button id={buttonId} class={buttonClass} onClick={() => FunctionService.functionType(domain, type, url, params, link, fname)}>
+        <button id={buttonId} class={buttonClass}>
             {children}
         </button>
     );

@@ -3,7 +3,6 @@ import Input from '../features/authentication/components/form/Input';
 import Button from '../features/authentication/components/form/Button';
 
 const Login = () => {
-  //var param = {"userId":"tjdwns6872", "userPw":"wjqfc227"};
   return (
     <div id="login_layout">
       <Input inputName="userId" inputType="text"/>
