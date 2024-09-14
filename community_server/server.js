@@ -1,4 +1,6 @@
 const express = require('express');
+var oracledb = require("oracledb");
+var dbConfig = require("./dbconfig");
 const app = express();
 const port = 3001;
 
